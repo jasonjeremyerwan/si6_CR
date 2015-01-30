@@ -2,25 +2,33 @@ Compte-rendu du TP à propos de l'utilisation de git et github.com
 
 Objectif : Récupérer une copie du dépôt et travailler dessus en local. 
 
-
-- entrer la ligne de commande git init cela permet d'initialiser un dépôt git.
-
-- ensuite entrer la commande git clone [URL]
-
-- ensuite entrer la commande git add nomdufichier (permet d'ajouter le fichier sur GitHub).
-
-
+- entrer la ligne de commande "git init" cela permet d'initialiser un dépôt git.
+- ensuite entrer la commande "git clone [URL]"
+- ensuite entrer la commande "git add nomdufichier" (permet d'ajouter le fichier sur GitHub).
 - taper: git status (permet de vérifier si le fichier est présent). 
-
 - taper: git commit -m "commentaire". 
 
+Ensuite taper ces deux commandes:
+- git config user.name "YourName".
+- git config user.email "YourEmail"
 
-ensuite taper c'est deux commandes:
+- taper: git remote add origin [URL dossier sur GitHub].
+- entrer: git push -u origin master et après se connecter sur GitHub.
 
--  git config user.name"YourName".
--  git config user.email"YourEmail"
+Objectif : Créer un dépôt en local et chez Github.com pour ensuite envoyer le travail local chez Github.com.
 
--  taper: git remode add origin + URL dossier sur GitHub.
+1. Chez github.com
+- Connectez vous sur votre compte et en haut à droite cliquer sur le petit "+" puis sur "New repository..."
+- Entrez un nouveau nom de dépôt
+- Sur la page qui s'affiche, tout le processus d'envoi depuis un dépôt local est écrit (voir 2. ci-dessous)
+- Il est important de retenir la ligne où est écrit le l'URL du dépôt chez github.com
 
--  entrer: git push -u origin master et après se connecter sur GitHub.
+2. En local :
+- Allez dans le répertoire qui servira de dépôt puis écrire la commande "git init"
+- Puis faites suivre vos fichiers par git avec la commande "git add nomdufichier"
+- Lorsque le travail est terminé, validez-le avec la commande "git commit -m "commentaire" "
+- Indiquez où envoyer le fichier chez github.com avec la commande "git remote add origin [URL retenue dans 1. ci-dessus]"
+- Et pour finir, envoyez les fichiers avec "git push origin master"
+- Entrez vos identifiants github.com (Nom d'utilisateur et mot de passe)
 
+3. Vérifiez si sur github.com vos fichiers sont bien envoyés.
