@@ -1,2 +1,26 @@
 Compte-rendu du TP à propos de l'utilisation de git et github.com
 
+Objectif : Récupérer une copie du dépôt et travailler dessus en local. 
+
+
+- entrer la ligne de commande git init cela permet d'initialiser un dépôt git.
+
+- ensuite entrer la commande git clone [URL]
+
+- ensuite entrer la commande git add nomdufichier (permet d'ajouter le fichier sur GitHub).
+
+
+- taper: git status (permet de vérifier si le fichier est présent). 
+
+- taper: git commit -m "commentaire". 
+
+
+ensuite taper c'est deux commandes:
+
+-  git config user.name"YourName".
+-  git config user.email"YourEmail"
+
+-  taper: git remode add origin + URL dossier sur GitHub.
+
+-  entrer: git push -u origin master et après se connecter sur GitHub.
+
